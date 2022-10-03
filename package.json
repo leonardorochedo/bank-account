@@ -1,0 +1,25 @@
+{
+  "name": "bank_account",
+  "version": "1.0.0",
+  "description": "Bank Account made with NodeJS 🏦",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardorochedo/bank_account.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardorochedo/bank_account/issues"
+  },
+  "homepage": "https://github.com/leonardorochedo/bank_account#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.1.2"
+  }
+}
