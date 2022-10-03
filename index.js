@@ -225,7 +225,12 @@ function addAmount(accountName, amount) {
 
     if (!amount) {
         console.log(chalk.bgRed.black('Ocorreu um erro, tenta novamente mais tarde!'))
-        return deposit()
+        return
+    }
+
+    if (amount <= 0) {
+        console.log('Digite um valor positivo!')
+        return
     }
 
     accountData.balance += parseFloat(amount)
@@ -242,7 +247,12 @@ function lessAmount(accountName, amount) {
 
     if (!amount) {
         console.log(chalk.bgRed.black('Ocorreu um erro, tenta novamente mais tarde!'))
-        return withdraw()
+        return
+    }
+
+    if (amount <= 0 || amount > accountData.balance) {
+        console.log('Digite um valor válido!')
+        return
     }
 
     accountData.balance -= parseFloat(amount)
